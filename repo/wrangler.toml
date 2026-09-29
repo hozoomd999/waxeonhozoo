@@ -1,0 +1,19 @@
+name = "hozoo-chat"
+main = "worker.js"
+compatibility_date = "2026-01-02"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "chat_db"
+database_id = "ISI_DATABASE_ID_LO"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "chat-uploads"
+
+[vars]
+JWT_SECRET = "ISI_SECRET_KEY_LO"
